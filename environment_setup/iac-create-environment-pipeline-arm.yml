@@ -1,4 +1,3 @@
-# CI/PR Pipeline that deploys an ARM template to create or update the resources needed by the other pipelines.
 trigger:
   branches:
     include:
@@ -19,7 +18,7 @@ pool:
 
 variables:
   - group: devopsforai-aml-vg
-  - name: WORKSPACE_SKU # https://docs.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-ml#sku
+  - name: WORKSPACE_SKU
     value: basic
 
 steps:
